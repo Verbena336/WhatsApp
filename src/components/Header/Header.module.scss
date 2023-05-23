@@ -1,0 +1,30 @@
+.header {
+  background-color: #202c33;
+  width: 100%;
+  height: 5.9rem;
+  padding: 1rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.logoutBtn {
+  background-color: #111b21;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  color: inherit;
+  max-width: 8rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #008069;
+  }
+}

@@ -1,0 +1,101 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  @media screen and (max-width: 1440px) {
+    padding: 0;
+  }
+}
+
+.wrapper {
+  background-color: #222e35;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1113px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  @media screen and (max-width: 1440px) {
+    max-width: none;
+  }
+
+  &::after {
+    content: '';
+    background-color: #008069;
+    height: 0.6rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  overflow: hidden;
+}
+
+.slide {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  transition: transform 0.5s ease-in-out;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideAnimation {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 200;
+  color: inherit;
+}
+
+.input {
+  background-color: #2a3942;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  outline: none;
+  color: inherit;
+  width: 100%;
+
+  &:focus {
+    background-color: #2b3e49;
+  }
+}
+
+.submit {
+  background-color: #111b21;
+  transition: all 0.2s;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  color: inherit;
+  max-width: 10rem;
+  width: 100%;
+
+  &:hover {
+    background-color: #008069;
+  }
+}
